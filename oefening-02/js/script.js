@@ -1,9 +1,9 @@
 function printTextBox(text) {
-    const border = "*".repeat(text.length + 4);
+    const border = "*".repeat(text.length + 2);
 
-    console.log(border);
+    console.log(`/${border}\\`);
     console.log(`| ${text} |`);
-    console.log(border);
+    console.log(`\\${border}/`);
 }
 
 printTextBox("HELLO WORLD");
