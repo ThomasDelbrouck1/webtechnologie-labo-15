@@ -4,6 +4,13 @@ function nameFromEmail(email) {
     return namePieces.join(" ").toUpperCase();
 }
 
+// Arrow notatie:
+// const nameFromEmail = (email) => {
+//     const namePart = email.split("@")[0];
+//     const namePieces = namePart.split(".");
+//     return namePieces.join(" ").toUpperCase();
+// };
+
 let email = prompt("Geef uw email:");
 
 while (email !== null && email !== "") {

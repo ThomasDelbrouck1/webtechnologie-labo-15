@@ -6,6 +6,15 @@ function printTextBox(text) {
     console.log(`\\${border}/`);
 }
 
+// Arrow notatie:
+// const printTextBox = (text) => {
+//     const border = "*".repeat(text.length + 2);
+//
+//     console.log(`/${border}\\`);
+//     console.log(`| ${text} |`);
+//     console.log(`\\${border}/`);
+// };
+
 printTextBox("HELLO WORLD");
 printTextBox("HALLO WERELD");
 printTextBox("HOLA MUNDO");

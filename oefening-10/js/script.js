@@ -12,6 +12,7 @@ function combineMemes(...memeCategories) {
     return combinedMemes;
 }
 
+
 const fullMemeList = combineMemes(classicMemes, deepFriedMemes, currentMemes);
 console.log("Volledige memelijst:");
 console.log(fullMemeList);
@@ -22,3 +23,15 @@ console.log(extendedMemeList);
 
 console.log("Originele lijst ongewijzigd:");
 console.log(fullMemeList);
+
+
+// Arrow notatie:
+// const combineMemes = (...memeCategories) => {
+//     let combinedMemes = [];
+//
+//     for (let i = 0; i < memeCategories.length; i++) {
+//         combinedMemes = [...combinedMemes, ...memeCategories[i]];
+//     }
+//
+//     return combinedMemes;
+// };

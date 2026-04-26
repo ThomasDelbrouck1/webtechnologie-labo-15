@@ -16,6 +16,17 @@ function calculateAverage(grades) {
     return Math.round((total / grades.length) * 100) / 100;
 }
 
+// Arrow notatie:
+// const calculateAverage = (grades) => {
+//     let total = 0;
+//
+//     for (let i = 0; i < grades.length; i++) {
+//         total += grades[i];
+//     }
+//
+//     return Math.round((total / grades.length) * 100) / 100;
+// };
+
 function getPassingStudents(studentsList) {
     const passingStudents = [];
 
@@ -27,6 +38,19 @@ function getPassingStudents(studentsList) {
 
     return passingStudents;
 }
+
+// Arrow notatie:
+// const getPassingStudents = (studentsList) => {
+//     const passingStudents = [];
+//
+//     for (let i = 0; i < studentsList.length; i++) {
+//         if (calculateAverage(studentsList[i].grades) >= 10) {
+//             passingStudents.push(studentsList[i]);
+//         }
+//     }
+//
+//     return passingStudents;
+// };
 
 for (let i = 0; i < students.length; i++) {
     console.log(`${students[i].name}: ${calculateAverage(students[i].grades)}`);
